@@ -106,8 +106,8 @@ Route::get('/get/profiledata', 'UserController@getProfileData');
 Route::get('/get/update/name', 'UserController@updateName');
 Route::get('/admin','UserController@getAdmin');
 Route::get('/sms','UserController@getSMSPage');
-Route::get('/sms/send','UserController@ChikkaSend');
-Route::post('/sms/receive','UserController@ChikkaReceive');
+Route::get('/sms/send','ChikkaController@send');
+Route::post('/sms/receive','ChikkaController@receive');
 
 Route::get('/get/dash/resched','ApplicantController@setReschedule');
 

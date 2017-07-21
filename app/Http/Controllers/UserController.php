@@ -288,17 +288,18 @@ public function ChikkaSend(Request $req){
     // $mobile = '09335532300';
     // $message = 'Hello world';
 
-    $config = [
-    'shortcode'=> '292902017',
-    'client_id'=> 'b00de5e0839604cdfe07a9e7b5e6c8127ef4bf36ab3b44c0b287ae0603a678c0',
-    'secret_key'=> 'aed7fabd8a0864f8c5a61b5f4dfb4fd3d1737e81d792ff22a3639748391d3612',
-    ];
+    // $config = [
+    // 'shortcode'=> '292902017',
+    // 'client_id'=> 'b00de5e0839604cdfe07a9e7b5e6c8127ef4bf36ab3b44c0b287ae0603a678c0',
+    // 'secret_key'=> 'aed7fabd8a0864f8c5a61b5f4dfb4fd3d1737e81d792ff22a3639748391d3612',
+    // ];
 
-    $chikka = new Chikka($config);
-    $resp = $chikka->send($mobile, $message);
-        // $data['response'] = 'response';
-        // return view('masters.sms',compact('response'));
-    return response()->json($data);
+    // $chikka = new Chikka($config);
+    // $resp = $chikka->send($mobile, $message);
+    //     // $data['response'] = 'response';
+    //     // return view('masters.sms',compact('response'));
+    // return response()->json($data);
+
 }
 
 public function ChikkaReceive(Request $req){
